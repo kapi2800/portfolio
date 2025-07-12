@@ -1,0 +1,207 @@
+body {
+    background: #f4f6fb;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 12px;
+}
+header {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    margin-bottom: 22px;
+    padding: 28px 20px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 22px;
+    border: 2px solid #0366d6;
+}
+.subtitle {
+    color: #555;
+    font-size: 18px;
+    margin: 6px 0 12px 0;
+}
+.contact a {
+    color: #0366d6;
+    text-decoration: none;
+    margin-right: 12px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.contact a:hover {
+    color: #0a3069;
+    text-decoration: underline;
+}
+.card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 22px;
+    padding: 24px;
+}
+.projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.project-card {
+    background: #f8f9fc;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    padding: 16px 18px;
+    width: 270px;
+}
+.project-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 19px;
+    color: #0366d6;
+}
+.project-card p {
+    color: #555;
+    font-size: 15px;
+    margin: 0 0 8px 0;
+}
+.project-card a {
+    color: #2066d6;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 15px;
+}
+.project-card a:hover {
+    text-decoration: underline;
+}
+#show-more-btn {
+    background: #0366d6;
+    color: #fff;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 18px 0 0 0;
+    transition: background 0.2s;
+}
+#show-more-btn:hover {
+    background: #0a3069;
+}
+.skills .skill-tag {
+    display: inline-block;
+    background: #e1e4e8;
+    color: #0366d6;
+    padding: 7px 16px;
+    margin: 5px 8px 5px 0;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid #c2c6cc;
+    transition: background 0.2s, color 0.2s;
+}
+.skills .skill-tag:hover {
+    background: #0366d6;
+    color: #fff;
+}
+.skill-desc {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #555;
+    min-height: 22px;
+}
+.education ul, .achievements ul, .extra ul {
+    padding-left: 18px;
+}
+.contact-form .contact-details {
+    margin-bottom: 16px;
+    padding: 10px 0 0 0;
+}
+.contact-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.contact-label {
+    width: 90px;
+    font-weight: bold;
+    color: #0366d6;
+    font-size: 15px;
+}
+.contact-value {
+    font-size: 15px;
+}
+.contact-value a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.contact-value a:hover {
+    text-decoration: underline;
+}
+.contact-form input, .contact-form textarea {
+    margin: 7px 0;
+    padding: 9px;
+    border-radius: 8px;
+    border: 1px solid #dce1e6;
+    font-size: 16px;
+    outline: none;
+    resize: vertical;
+}
+.contact-form textarea {
+    min-height: 60px;
+    max-height: 180px;
+}
+.contact-form button {
+    background: #0366d6;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 7px;
+    transition: background 0.2s;
+}
+.contact-form button:hover {
+    background: #0a3069;
+}
+footer {
+    text-align: center;
+    color: #aaa;
+    margin-top: 38px;
+    font-size: 15px;
+    padding-bottom: 16px;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 12px 2px;
+    }
+    .projects .project-list {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .project-card {
+        width: 100%;
+    }
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile-img {
+        margin-bottom: 12px;
+        margin-right: 0;
+    }
+    .contact-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-label {
+        margin-bottom: 2px;
+    }
+}

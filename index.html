@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kapil Kumar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <img src="https://avatars.githubusercontent.com/u/156339132?v=4" alt="Kapil Kumar" class="profile-img">
+                <div>
+                    <h1>Kapil Kumar</h1>
+                    <p class="subtitle">BTech CSE Student | Uttarakhand, India</p>
+                    <div class="contact">
+                        <a href="mailto:pal.kapil2800@gmail.com">Email</a>
+                        <a href="https://linkedin.com/in/kapil2800/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/kapi2800/" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="projects card">
+            <h2>Projects</h2>
+            <div class="project-list" id="main-projects">
+                <div class="project-card">
+                    <h3>validJSON</h3>
+                    <p>Custom JSON parser for error detection and validation.</p>
+                    <a href="https://github.com/kapi2800/validJSON" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <button id="show-more-btn">Show More Projects</button>
+            <div class="project-list" id="more-projects" style="display: none;">
+                <div class="project-card">
+                    <h3>Handwritten Digit Recognition</h3>
+                    <p>CNN-based digit classifier (Python, TensorFlow, Keras).</p>
+                    <a href="https://github.com/kapi2800/Handwritten-Digit-Recognition" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Healthcare ML Web Application</h3>
+                    <p>Disease prediction web app using ML models.</p>
+                    <a href="https://github.com/kapi2800/Healthcare-ML-WebApp" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>University Management System</h3>
+                    <p>Java/MySQL GUI app for managing students and courses.</p>
+                    <a href="https://github.com/kapi2800/University-Management-System" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills card">
+            <h2>Skills</h2>
+            <div id="skills-list">
+                <span class="skill-tag" onclick="showSkill('HTML')">HTML</span>
+                <span class="skill-tag" onclick="showSkill('CSS')">CSS</span>
+                <span class="skill-tag" onclick="showSkill('JavaScript')">JavaScript</span>
+                <span class="skill-tag" onclick="showSkill('Python')">Python</span>
+                <span class="skill-tag" onclick="showSkill('Java')">Java</span>
+                <span class="skill-tag" onclick="showSkill('C/C++')">C/C++</span>
+                <span class="skill-tag" onclick="showSkill('MySQL')">MySQL</span>
+                <span class="skill-tag" onclick="showSkill('Git')">Git</span>
+            </div>
+            <div id="skill-desc" class="skill-desc"></div>
+        </section>
+
+        <section class="education card">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>BTECH (CSE)</strong>, Graphic Era Hill University, Haldwani (2026)</li>
+                <li><strong>Diploma (Electronics)</strong>, Govt. Polytechnic Kashipur (2023)</li>
+                <li><strong>Intermediate & High School (CBSE)</strong>, Chhauni Children’s Academy, Kashipur (2019, 2021)</li>
+            </ul>
+        </section>
+
+        <section class="achievements card">
+            <h2>Achievements & Certificates</h2>
+            <ul>
+                <li>Foundations of Web Development – Udemy (2025)</li>
+                <li>Java Course – Mindluster (2024)</li>
+                <li>Industrial Training – Surya Roshni Limited (2022)</li>
+                <li>Deloitte Virtual Experience Programs (2025)</li>
+            </ul>
+        </section>
+
+        <section class="extra card">
+            <h2>Extracurricular & Strengths</h2>
+            <ul>
+                <li>Strong analytical thinker and self-driven learner</li>
+                <li>Experience with AI tools, team collaboration, and rapid adaptation</li>
+                <li>Hands-on exposure to PCB manufacturing and technical documentation</li>
+            </ul>
+        </section>
+
+        <section class="contact-form card">
+            <h2>Contact Me</h2>
+            <div class="contact-details">
+                <div class="contact-row">
+                    <span class="contact-label">Email:</span>
+                    <span class="contact-value"><a href="mailto:pal.kapil2800@gmail.com">pal.kapil2800@gmail.com</a></span>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">Mobile:</span>
+                    <span class="contact-value">+91 8535087561</span>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">LinkedIn:</span>
+                    <span class="contact-value"><a href="https://linkedin.com/in/kapil2800/" target="_blank">kapil2800</a></span>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">GitHub:</span>
+                    <span class="contact-value"><a href="https://github.com/kapi2800/" target="_blank">kapi2800</a></span>
+                </div>
+            </div>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kapil Kumar</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
